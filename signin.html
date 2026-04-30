@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Indigo Kitchen | Your Taste, Our Passion</title>
+    <link rel='stylesheet' href='style.css'>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel='stylesheet' href='signin.css'>
+</head>
+
+<body>
+    <div class="bg-mandala-left"><img src="img/kolam.png" alt=""></div>
+    <div class="bg-mandala-right"><img src="img/kolam.png" alt=""></div>
+    <section class="menu">
+        <div class="nav">
+            <div class="logo">
+                <h2>Indigo<b>Kitchen</b></h2>
+            </div>
+            <!-- Add an ID to the list for JavaScript or CSS control -->
+            <ul id="nav-menu">
+                <li><a class="active" href='index.html'>Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Explore Menu <i class='bx bx-chevron-down'></i></a>
+                    <div class="dropdown-content mega-menu">
+                        <div class="dropdown-grid">
+                            <a href="menu.html#veg" class="menu-card">
+                                <div class="icon-wrap veg-bg"><i class='bx bx-leaf'></i></div>
+                                <div class="text-wrap">
+                                    <span class="label">Pure Veg</span>
+                                    <p>Traditional Dakshin Greens</p>
+                                </div>
+                            </a>
+                            <a href="menu.html#nonveg" class="menu-card">
+                                <div class="icon-wrap nonveg-bg"><i class='bx bx-dish'></i></div>
+                                <div class="text-wrap">
+                                    <span class="label">Non-Veg</span>
+                                    <p>Fiery Chettinad Specials</p>
+                                </div>
+                            </a>
+                            <a href="menu.html#desserts" class="menu-card">
+                                <div class="icon-wrap dessert-bg"><i class='bx bxs-cake'></i></div>
+                                <div class="text-wrap">
+                                    <span class="label">Sweets</span>
+                                    <p>Heritage Milk & Jaggery</p>
+                                </div>
+                            </a>
+                            <a href="menu.html#drinks" class="menu-card">
+                                <div class="icon-wrap drinks-bg"><i class='bx bxs-drink'></i></div>
+                                <div class="text-wrap">
+                                    <span class="label">Drinks</span>
+                                    <p>Cold Beverages</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href='index.html#about'>About</a></li>
+                <li><a href='index.html#contact'>Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <input class="signin" type="submit" value="Sign In" onclick="window.location.href='signin.html';" />
+                <input class="signup" type="submit" value="Sign Up" onclick="window.location.href='signup.html';" />
+            </div>
+            <!-- Mobile Menu Toggle Icon -->
+            <i class='bx bx-menu' id="menu-icon"></i>
+        </div>
+    </section>
+    <section class="signin-section" id="signin">
+        <h3 class="section-title">Sign In</h3>
+        <div class="sign-in-wrapper">
+            <!-- Right Side: The Message Form -->
+            <div class="signin-form-container">
+                <form class="indigo-form">
+                    <div class="input-group">
+                        <label>Phone Number</label>
+                        <input type="tel" placeholder="e.g. 123-456-7890" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Sign In</button>
+                </form>
+                <span class="downtext">Don't have an account? <a href="signup.html">Sign Up</a></span>
+            </div>
+        </div>
+    </section>
+    <footer class="south-footer">
+        <!-- Full-width Temple Border -->
+        <div class="temple-border"></div>
+
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-col brand">
+                    <h2 class="footer-logo">Indigo<b>Kitchen</b></h2>
+                    <p>Where the rhythm of Bharatanatyam meets the art of authentic South Indian cuisine.</p>
+                    <div class="mudra-line">
+                        <i class='bx bx-fingerprint'></i> <!-- Stylized Mudra Icon -->
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Our Kitchen</h3>
+                    <ul>
+                        <li><a href="#">Chettinad Special</a></li>
+                        <li><a href="#">The Dosa Room</a></li>
+                        <li><a href="#">Temple Feasts</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Heritage</h3>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Classical Arts</a></li>
+                        <li><a href="#">Spice Map</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col newsletter">
+                    <h3>Stay Connected</h3>
+                    <div class="subscribe-wrap">
+                        <input type="text" placeholder="Email for spice updates...">
+                        <button><i class='bx bx-right-arrow-alt'></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Bottom Gold Zari Strip -->
+        <div class="zari-bottom">
+            <div class="footer-content">
+                <p>&copy; 2026 Indigo Kitchen. Inspired by the soul of Dakshin.</p>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </footer>
+</body>
+
+</html>
