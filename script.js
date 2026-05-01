@@ -53,10 +53,15 @@ menuToggle.addEventListener('click', function (e) {
     }
 });
 
-fetch("https://formspree.io/f/xpqbzwwz", {
-    method: "POST",
-    body: data,
-    headers: {
-        'Accept': 'application/json'
-    }
-})
+const form = document.querySelector('form');
+const data = new FormData(form);
+const value = Object.fromEntries(data.entries()); // Converts FormData to a plain JS Object
+
+fetch("https://formspree.io/f/your_id", {
+  method: "POST",
+  body: JSON.stringify(value), // Now it's a valid JSON string
+  headers: {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json'
+  }
+});
