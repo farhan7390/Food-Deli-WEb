@@ -52,3 +52,11 @@ menuToggle.addEventListener('click', function (e) {
         parentLi.classList.toggle('active');
     }
 });
+
+fetch("https://formspree.io/f/xpqbzwwz", {
+    method: "POST",
+    body: data,
+    headers: {
+        'Accept': 'application/json'
+    }
+})
