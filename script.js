@@ -52,3 +52,29 @@ menuToggle.addEventListener('click', function (e) {
         parentLi.classList.toggle('active');
     }
 });
+
+var form = document.getElementById("form");
+    
+async function handleSubmit(event) {
+  event.preventDefault();
+  var status = document.getElementById("form-status"); // Add a div with this ID for messages
+  var data = new FormData(event.target);
+  
+  fetch(event.target.action, {
+    method: form.method,
+    body: data,
+    headers: {
+        'Accept': 'application/json'
+    }
+  }).then(response => {
+    if (response.ok) {
+      alert("Thanks! Your message has been sent to Indigo Kitchen.");
+      form.reset();
+    } else {
+      alert("Oops! There was a problem submitting your form");
+    }
+  }).catch(error => {
+    alert("Oops! There was a problem submitting your form");
+  });
+}
+form.addEventListener("submit", handleSubmit)
